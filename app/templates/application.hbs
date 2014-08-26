@@ -1,9 +1,7 @@
 <x-layout>
   <header>
     <x-appbar>
-      <button>&lt;</button>
       <h1>{{t app.title}}</h1>
-      <button>?</button>
     </x-appbar>
   </header>
   <section>
@@ -12,7 +10,10 @@
   <footer>
     <x-tabbar>
       <x-tabbar-tab>
-        {{#link-to 'index'}}{{t app.title}}{{/link-to}}
+        {{#link-to 'clock'}}Clock{{/link-to}}
+      </x-tabbar-tab>
+      <x-tabbar-tab>
+        {{#link-to 'timezones'}}Timezones{{/link-to}}
       </x-tabbar-tab>
     </x-tabbar>
   </footer>
