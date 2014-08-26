@@ -20,6 +20,7 @@
         "$": true,
         "Ember": true,
         "Em": true,
+        "moment": true,
         "Handlebars": true,
         "DS": true,
         "I18n": true
