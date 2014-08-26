@@ -1,0 +1,19 @@
+<x-layout>
+  <header>
+    <x-appbar>
+      <button>&lt;</button>
+      <h1>{{t app.title}}</h1>
+      <button>?</button>
+    </x-appbar>
+  </header>
+  <section>
+    {{outlet}}
+  </section>
+  <footer>
+    <x-tabbar>
+      <x-tabbar-tab>
+        {{#link-to 'index'}}{{t app.title}}{{/link-to}}
+      </x-tabbar-tab>
+    </x-tabbar>
+  </footer>
+</x-layout>
